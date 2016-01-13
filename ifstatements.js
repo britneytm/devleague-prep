@@ -116,6 +116,10 @@ loopToNumber(9);
 //String values and have the function write a for loop that loops for each number of elements
 // in the Array and console.log each character as the loop executes.
 
-function showEachValue (characters){
-	
+function showEachValue(characters){
+	for (var i = 0; i<characters.length; i++){
+		console.log (characters[i]);
+	}
 }
+
+showEachValue(["a", "b", "c", "d"]);
