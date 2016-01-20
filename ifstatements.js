@@ -123,3 +123,24 @@ function showEachValue(characters){
 }
 
 showEachValue(["a", "b", "c", "d"]);
+
+//Function - createArrayFromString
+//Write a function that takes a single variable of type String called word 
+//and write a for loop that creates an Array made up of each character in word except for A. 
+//We don't want no stinking A in our Array. 
+//Note: You will need to use the Array.push() method to complete this function.
+
+var phrase = "Apples are always awesome.";
+
+function createArrayFromString(word){
+	var letterArray = [ ];
+	for (var i = 0; i < word.length; i++){
+		var currentLetter = word.charAt([i]);
+		if (currentLetter !== "a" && currentLetter !== "A") {
+			letterArray.push(currentLetter);
+        console.log(letterArray);
+		}
+	}
+}
+
+createArrayFromString(phrase);
