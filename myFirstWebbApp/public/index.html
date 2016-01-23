@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My First Web App</title>
+    <title>My <b>First</b> Web App</title>
     <script
       type="text/javascript"
       src="js/app.js"></script>
   </head>
   <body>
     <div>
-      <span>Name:</span>
+      <h1>h1</h1>
+      <h2>h2</h2>
+    </div>
+    <div>
+      <a href="www.google.com">Google</a>
+    </div>
+    <div>
+      <span>My Name:</span>
       <span id="myName">
         Britney
       </span>
@@ -32,6 +39,7 @@
         </p>
       </span>
     </div>
-    <button onclick='addLastName()'>Push Me</button>
+    <button onclick="addLastName('myName', 'T-M')">Push Me</button>
+    <button onclick="addLastName('yourName', 'Shmo')">Push Me</button>
   </body>
 </html>

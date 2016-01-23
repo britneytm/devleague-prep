@@ -1,15 +1,14 @@
-function addLastName(){
+function addLastName(id, lastName){
 
     var lastNameElem = 
       document.createElement('span');
     
     var lastNameText =
-      document.createTextNode('T-M');
+      document.createTextNode(lastName);
 
-    lastNameElem.id = 'myLastName';
     lastNameElem.appendChild(lastNameText);
 
-    var myNameElem = document.getElementById('myName');
+    var myNameElem = document.getElementById(id);
 
     myNameElem.appendChild(lastNameElem);
 
@@ -17,3 +16,4 @@ function addLastName(){
     //document.body.appendChild(element);
     //<div id='someId'>TEST</div>
 }
+
