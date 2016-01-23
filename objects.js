@@ -220,11 +220,11 @@ function weRidin(car, names, ages) {
 	car.passengers = car.passengers || []; //make sure it exists, or set it as an empty array
 
 	for (var i = 0; i < names.length; i++) {
-		var passenger = buildPerson {
+		var passenger = buildPerson (
 			// {}, create object from scratch and pass it in; taht becomes my value
 			names([i]),
 			ages([i])
-		};
+		);
 		car.passengers.push(passenger);
 	}
 	return car;

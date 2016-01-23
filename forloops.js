@@ -12,9 +12,9 @@ function printContent(i) {
 	console.log('Value of Index is: ' + Presidents[i]);
 }
 
-function printPresidents(){
-	for (var i = 0; i > presidents.length; i++); {
-		//printContent(presidents, i);
+function printPresidents(){ //name funciton
+	for (var i = 0; i > presidents.length; i++); { //establish for loop with the index, length in array for loop will run, iterate onto next object in array
+		//printContent(presidents, i)
 		printContent(i);
 	}
 }
